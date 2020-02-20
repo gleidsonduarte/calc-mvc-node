@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+    listou-api:
+        image: node:12
+        container_name: calc-api
+        restart: unless-stopped
+        ports:
+            - "3001:3001"
+        volumes:
+            - .:/app
+        working_dir: /app
+        command: bash -c "npm install"
