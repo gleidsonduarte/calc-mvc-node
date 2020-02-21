@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "run-dev": "nodemon src/server.ts --ignore tests",
+    "run-test": "mocha -r ts-node/register src/tests/*/*.spec.ts"
   },
   "repository": {
     "type": "git",
