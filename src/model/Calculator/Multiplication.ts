@@ -1,6 +1,6 @@
-import { Calculator } from "./Calculator";
+import { ICalculable } from './ICalculable'
 
-class Multiplication extends Calculator {
+class Multiplication implements ICalculable {
     /**
      * Return multiplication of numbers
      * @param {number} number1

@@ -1,6 +1,6 @@
-import { Calculator } from './Calculator'
+import { ICalculable } from './ICalculable'
 
-class Sum extends Calculator {
+class Sum implements ICalculable {
     /**
      * Return sum of numbers
      * @param {number} number1
