@@ -1,9 +1,9 @@
 import 'mocha'
 import { assert } from 'chai'
-import sum from '../../model/Calculator/Sum'
-import Subtraction from '../../model/Calculator/Subtraction'
-import multiplication from '../../model/Calculator/Multiplication'
-import division from '../../model/Calculator/Division'
+import sum from '../../models/Calculator/Sum'
+import Subtraction from '../../models/Calculator/Subtraction'
+import multiplication from '../../models/Calculator/Multiplication'
+import division from '../../models/Calculator/Division'
 
 describe('Calculator', () => {
     it('Sum two values', () => {
