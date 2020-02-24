@@ -1,8 +1,8 @@
 import { Request, Response } from 'express'
 import sum from '../models/Calculator/Sum'
 import subtraction from '../models/Calculator/Subtraction'
-import Multiplication from '../models/Calculator/Multiplication'
-import Division from '../models/Calculator/Division'
+import multiplication from '../models/Calculator/Multiplication'
+import division from '../models/Calculator/Division'
 import { RouterParams } from '../models/RouterParams'
 
 class CalculatorController {
@@ -31,7 +31,7 @@ class CalculatorController {
 
         RouterParams.isValid([number1, number2], response)
     
-        let value = Multiplication.calc(number1, number2)
+        let value = multiplication.calc(number1, number2)
         
         response.status(200).send(JSON.stringify({ result : value }))
     }
@@ -41,7 +41,7 @@ class CalculatorController {
 
         RouterParams.isValid([number1, number2], response)
     
-        let value = Division.calc(number1, number2)
+        let value = division.calc(number1, number2)
         
         response.status(200).send(JSON.stringify({ result : value }))
     }

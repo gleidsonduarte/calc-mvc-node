@@ -4,8 +4,11 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "run-dev": "nodemon src/server.ts --ignore tests",
-    "run-test": "mocha -r ts-node/register src/tests/*/*.spec.ts"
+    "build": "tsc -p .",
+    "prod": "node dist/server.js",
+    "dev": "nodemon src/server.ts --ignore src/tests",
+    "dev:debug": "nodemon --inspect=9229 -e ts --exec node -r ts-node/register src/server.ts",
+    "dev:test": "mocha -r ts-node/register **/*.spec.ts"
   },
   "repository": {
     "type": "git",
