@@ -13,7 +13,7 @@ class CalculatorController {
     
         const value = sum.calc(number1, number2)
     
-        response.status(200).send(JSON.stringify({ result : value }))
+        response.status(200).json({ result : value })
     }
 
     subtraction(request: Request, response: Response) {
@@ -23,7 +23,7 @@ class CalculatorController {
     
         let value = subtraction.calc(number1, number2)
         
-        response.status(200).send(JSON.stringify({ result : value }))
+        response.status(200).json({ result : value })
     }
 
     multiplication(request: Request, response: Response) {
@@ -33,7 +33,7 @@ class CalculatorController {
     
         let value = multiplication.calc(number1, number2)
         
-        response.status(200).send(JSON.stringify({ result : value }))
+        response.status(200).json({ result : value })
     }
 
     division(request: Request, response: Response) {
@@ -43,7 +43,7 @@ class CalculatorController {
     
         let value = division.calc(number1, number2)
         
-        response.status(200).send(JSON.stringify({ result : value }))
+        response.status(200).json({ result : value })
     }
 }
 
