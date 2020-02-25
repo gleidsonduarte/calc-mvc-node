@@ -1,13 +1,14 @@
 version: '3'
 
 services:
-    listou-api:
-        image: node:12
+    calc-api:
         container_name: calc-api
+        image: node:12
         restart: unless-stopped
-        ports:
-            - "3001:3001"
         volumes:
             - .:/app
         working_dir: /app
-        command: bash -c "npm install"
+        command: bash -c "yarn install && yarn dev && ls -full"
+        ports:
+            - "3001:3001"
+            - "3002:3002"
