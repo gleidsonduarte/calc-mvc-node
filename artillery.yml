@@ -1,0 +1,17 @@
+config:
+  target: "http://localhost:3001"
+  phases:
+  - duration: 5
+    arrivalRate: 10
+scenarios:
+  - flow:
+    - post:
+        url: "/calculator/sum"
+        headers:
+          content-type: "application/x-www-form-urlencoded"
+        json:
+          number1: "7"
+          number2: "2"
+        capture:
+        - json: $.result
+          as: "result"

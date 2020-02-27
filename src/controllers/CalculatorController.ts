@@ -6,7 +6,7 @@ import division from '../models/Calculator/Division'
 import { RouterParams } from '../models/RouterParams'
 
 class CalculatorController {
-    sun(request: Request, response: Response) {
+    sum(request: Request, response: Response) {
         const { number1, number2 } = request.body
 
         RouterParams.isValid([number1, number2], response)

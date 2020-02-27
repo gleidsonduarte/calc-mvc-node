@@ -34,6 +34,7 @@
     "@types/mocha": "^7.0.1",
     "@types/node": "^13.7.4",
     "@types/supertest": "^2.0.8",
+    "artillery": "^1.6.0-29",
     "chai": "^4.2.0",
     "mocha": "^7.0.1",
     "nodemon": "^2.0.2",
