@@ -4,8 +4,6 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    
-    "dev:test": "mocha -r ts-node/register **/*.spec.ts"
   },
   "repository": {
     "type": "git",
