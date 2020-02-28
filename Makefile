@@ -4,7 +4,7 @@ SHELL := /bin/bash
 PACKAGE_MANAGER := yarn
 
 default:
-	@echo "Hello world!"
+	@echo "Hello Calc API"
 
 # Transpil and build the project in js.
 build:
